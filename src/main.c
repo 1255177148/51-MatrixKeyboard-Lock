@@ -20,7 +20,7 @@ void main()
                     password[count] = martrixKeyNumber % 10; // 密码向左移动一位，这里余10，是因为S10按键要算作0
                     count--;
                 }
-                LCD_ShowNum(2, 1, password, 4);
+                LCD_ShowString(2, 1, password);
             }
             if (martrixKeyNumber == 11) {
                 if (strcmp(password, realPassword) == 0) {
